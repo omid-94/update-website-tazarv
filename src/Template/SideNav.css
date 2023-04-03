@@ -1,0 +1,32 @@
+.logo {
+    width: 150px;
+    height: 80px;
+}
+.version {
+    width: 100%;
+    height: 5px;
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+.itemContainer{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.itemContainer::-webkit-scrollbar {
+    width: 12px;
+}
+
+.itemContainer::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px grey; 
+    border-radius: 10px;
+}
+
+.itemContainer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px grey; 
+}
