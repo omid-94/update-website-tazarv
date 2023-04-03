@@ -8,7 +8,7 @@ const SideNav = () => {
    const navigate = useNavigate() //usage : navigate('/signup');
    const [menuItems, setMenuItems] = useState([...data])
    const menuItemClick = (e,item) => {
-        e.preventDefault();
+        // e.preventDefault();
         
         let temp = [...menuItems]
         temp.map((mItem) => 
