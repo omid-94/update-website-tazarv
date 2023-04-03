@@ -9,14 +9,11 @@ const SideNav = () => {
    const [menuItems, setMenuItems] = useState([...data])
    const menuItemClick = (e,item) => {
         e.preventDefault();
-        console.log("menuItemClick" ,"Step 01")
+        
         let temp = [...menuItems]
-        console.log("menuItemClick" ,"Step 02")
         temp.map((mItem) => 
             mItem.IsActive = item.ID == mItem.ID
         )
-        console.log("menuItemClick" ,"Step 04", temp)
-        console.log("menuItemClick" ,"Step 05",{...temp})
         setMenuItems([...temp]) 
    } 
   return (
@@ -27,8 +24,6 @@ const SideNav = () => {
     <hr/>
     <div className='itemContainer'>
     <ul className="nav nav-pills flex-column mb-auto">
-        {console.log("menuItems" , menuItems)}
-        {console.log("data" , data)}
     {menuItems && menuItems.map((item) => {
         return (
             <li key={item.ID} className="nav-item">
