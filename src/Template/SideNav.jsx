@@ -2,18 +2,22 @@ import React, { useState } from 'react'
 import './SideNav.css'
 import logo from '../Resources/Tazarv.png'
 import data from './SideNavData'
+import { useNavigate , Link} from 'react-router-dom';
 
 const SideNav = () => {
+   const navigate = useNavigate() //usage : navigate('/signup');
    const [menuItems, setMenuItems] = useState([...data])
-   const menuItemClick = (item) => { 
-    console.log("menuItemClick" ,"Step 01")
-    let temp = [...menuItems]
-    console.log("menuItemClick" ,"Step 02")
-    temp.map((mItem) => 
-        mItem.IsActive = item.ID == mItem.ID
-    )
-    console.log("menuItemClick" ,"Step 04")
-    setMenuItems({...temp}) 
+   const menuItemClick = (e,item) => {
+        e.preventDefault();
+        console.log("menuItemClick" ,"Step 01")
+        let temp = [...menuItems]
+        console.log("menuItemClick" ,"Step 02")
+        temp.map((mItem) => 
+            mItem.IsActive = item.ID == mItem.ID
+        )
+        console.log("menuItemClick" ,"Step 04", temp)
+        console.log("menuItemClick" ,"Step 05",{...temp})
+        setMenuItems([...temp]) 
    } 
   return (
     <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{width: '250px'}}>
@@ -28,10 +32,10 @@ const SideNav = () => {
     {menuItems && menuItems.map((item) => {
         return (
             <li key={item.ID} className="nav-item">
-            <a href={item.URL} onClick={(e) => menuItemClick(item)}
+            <Link to={item.URL} onClick={(e) => menuItemClick(e,item)}
                 className={`nav-link ${item.IsActive ? "active" : "text-white"}`} aria-current="page">
                 {item.Title}
-            </a>
+            </Link>
           </li>
         )
     })}
