@@ -2,7 +2,7 @@ import React from 'react'
 import {Details, OtherDetails, DownloadLink, OtherDownloadLinks, Notes} from './PageTemplateComponents'
 
 const PageTemplate = ({Title , NoteList , DetailList , 
-                    PrevDetailList , MainLinkURL , OtherLinksURL }) => {
+                    PrevDetailList , OtherLinksURL }) => {
     console.log(Notes)
     return (
     <div style={{display : 'flex', flexDirection : 'column'}}>
@@ -10,7 +10,6 @@ const PageTemplate = ({Title , NoteList , DetailList ,
         {NoteList && <Notes Notes={NoteList}/>}
         {DetailList && <Details Details={DetailList}/>}
         {PrevDetailList && <OtherDetails PrevDetails={PrevDetailList} />}
-        {MainLinkURL && <DownloadLink MainLink={MainLinkURL}/> }
         {OtherLinksURL && <OtherDownloadLinks OtherLinks={OtherLinksURL}/> }
     </div>
   )

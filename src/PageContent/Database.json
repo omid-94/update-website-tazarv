@@ -34,10 +34,6 @@
             ]
         }
     ],
-    "MainLink" :  {
-        "name" : "نسخه ستادی",
-        "link" : "ddddddddddddddddddddddd"
-    },
     "OtherLinks" : [
         {
             "Id" : 1,
@@ -60,7 +56,7 @@
             "name" : "نسخه متمرکز",
             "version" : "1.0.3",
             "date" : "1402/01/16",
-            "link" : "bbbbbbbbbbbbbbbb",
+            "link" : "https://fdn.sharezilla.ir/r/?software/Video.Shaper.Pro.v3.7.x64_p30download.com.rar",
             "isActive" : false
         },
         {
@@ -68,7 +64,7 @@
             "name" : "نسخه ناحیه",
             "version" : "1.0.4",
             "date" : "1402/01/17",
-            "link" : "cccccccccccccccc",
+            "link" : "https://www.google.com/",
             "isActive" : false
         }
     ]

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Details  from '../Datails/Detials'
+import DownloadLink from '../DownloadLink/DownloadLink'
 
 const OtherDownloadLinks = ({OtherLinks}) => {
   const [allLinks , setAllLinks] = useState([...OtherLinks])
@@ -11,7 +11,7 @@ const OtherDownloadLinks = ({OtherLinks}) => {
     setAllLinks([...temp]) 
 } 
   return (
-    <div>
+    <div style={{marginTop : '10px'}}>
       <ul className="nav nav-tabs mb-3" id="ex1" role="tablist">
         {allLinks.map((item , index) => {
             return(
@@ -39,8 +39,7 @@ const OtherDownloadLinks = ({OtherLinks}) => {
               role="tabpanel"
               aria-labelledby={"ex1-tab-" + index}
             >
-              <h1>{item.name}</h1>
-              {/* <Details /> */}
+              <DownloadLink MainLink={item}/>
           </div>
           </div>
           )
