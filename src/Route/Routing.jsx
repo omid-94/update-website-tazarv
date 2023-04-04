@@ -1,8 +1,11 @@
 import { Routes ,Route} from 'react-router-dom';
-
+import { DatabaseUpdate, Custom404 } from '../Pages'
 const Routing = () => {
   return (
-    <div>Routing</div>
+    <Routes>
+      <Route path="/" element={<DatabaseUpdate/>}/>
+      <Route path="*" element={<Custom404/>}/>
+    </Routes>
   //   <Routes>
   //     <Route path="/" element={<Home/>}/>
   //     <Route path="/aboutus" element={<AboutUs/>}/>

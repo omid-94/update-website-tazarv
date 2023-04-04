@@ -1,0 +1,27 @@
+{
+    "Title" : "به روز رسانی دیتابیس نسخه 6.0.2.1",
+    "Notes" : [
+        "این نسخه از پایگاه داده با نسخه aaaa نرم افزار حوادث، نسخه bbb سرویس ها و نسخه ccc نسخه وب سازگار می باشد",
+        "همواره به منظور به روز رسانی پایگاه داده از به روز رسانی ستادی استفاده شود (درصورت به روز نشدن یکی از نواحی پس از به روز رسانی ستاد، می توان از به روز رسانی مربوطه استفاده کرد) "
+    ],
+    "Details" : null,
+    "PrevDetails" : null,
+    "MainLink" :  {
+        "name" : "dddddddddd",
+        "link" : "ddddddddddddddddddddddd"
+    },
+    "OtherLinks" : [
+        {
+            "name" : "aaa",
+            "link" : "aaaaaaaaaaaaaaaaaaa"
+        },
+        {
+            "name" : "bbbb",
+            "link" : "bbbbbbbbbbbbbbbb"
+        },
+        {
+            "name" : "cccc",
+            "link" : "cccccccccccccccc"
+        }
+    ]
+}

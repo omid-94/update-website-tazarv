@@ -23,7 +23,7 @@ const SideNav = () => {
     </a>
     <hr/>
     <div className='itemContainer'>
-    <ul className="nav nav-pills flex-column mb-auto">
+    <ul className="nav nav-pills flex-column mb-auto" style={{padding : '0px'}}>
     {menuItems && menuItems.map((item) => {
         return (
             <li key={item.ID} className="nav-item">

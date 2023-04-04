@@ -8,6 +8,8 @@
     display: flex;
     background-color: red;
     width: 250px;
+    direction: ltr;
+    text-align: end;
 }
 .ContentContainer {
     display: flex;
