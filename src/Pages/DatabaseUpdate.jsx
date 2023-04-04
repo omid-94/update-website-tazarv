@@ -6,11 +6,11 @@ const DatabaseUpdate = () => {
   return (
     <PageTemplate 
         Title = {data.Title}
-        Notes = {data.Notes}
-        Details = {data.Details}
-        PrevDetails = {data.PrevDetails}
-        MainLink = {data.MainLink}
-        OtherLinks = {data.OtherLinks}
+        NoteList = {data.Notes}
+        DetailList = {data.Details}
+        PrevDetailList = {data.PrevDetails}
+        MainLinkURL = {data.MainLink}
+        OtherLinksURL = {data.OtherLinks}
         />
   )
 }

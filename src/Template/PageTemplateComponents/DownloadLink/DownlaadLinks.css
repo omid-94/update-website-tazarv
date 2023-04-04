@@ -1,0 +1,32 @@
+.DownloadLink_Container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+.DownloadLink_Title {
+    display: flex;
+    flex : 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.DownloadLink_Title > a {
+    font-size: 20pt;
+    vertical-align: middle;
+    text-align: center;
+}
+.DownloadLink_Btn {
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.DownloadLink_Btn > div > a {
+    width: 100%;
+    height: 100%;
+}

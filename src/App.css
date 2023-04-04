@@ -25,6 +25,7 @@
     border: 1px solid black;
     border-radius: 20px;
     overflow-y: scroll;
+    /* background: white; */
     background: linear-gradient(orange, white);
 }
 .Content::-webkit-scrollbar {
