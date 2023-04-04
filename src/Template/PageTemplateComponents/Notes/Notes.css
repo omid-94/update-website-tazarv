@@ -1,11 +1,11 @@
-.Container {
+.Notes_Container {
     border: 1px solid red;
     border-radius: 10px;
     background-color: #ffc8c9;
     margin: 5px;
 }
 
-.Container > span {
+.Notes_Container > span {
     text-decoration: wavy;
     font-size: 15pt;
     margin: 15px;

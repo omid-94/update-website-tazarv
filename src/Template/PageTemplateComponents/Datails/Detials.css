@@ -1,11 +1,11 @@
-.Container {
+.Detials_Container {
     border: 1px solid red;
     border-radius: 10px;
     background-color: lightgreen;
     margin: 5px;
 }
 
-.Container > span {
+.Detials_Container > span {
     text-decoration: wavy;
     font-size: 15pt;
     margin: 15px;

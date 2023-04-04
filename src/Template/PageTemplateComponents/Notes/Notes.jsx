@@ -2,7 +2,7 @@ import React from 'react'
 import './Notes.css'
 const Notes = ({Notes}) => {
   return (
-    <div className='Container'>
+    <div className='Notes_Container'>
       <span>نکات</span>
       <ol>
         {Notes.map((item , index) => {
