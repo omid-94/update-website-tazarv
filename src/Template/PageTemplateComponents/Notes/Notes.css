@@ -2,8 +2,9 @@
     border: 1px solid red;
     border-radius: 10px;
     background-color: #ffc8c9;
-    margin: 5px;
+    margin: 10px;
     font-weight: bold;
+    box-shadow: 5px 5px 10px  black;
 }
 
 .Notes_Container > span {

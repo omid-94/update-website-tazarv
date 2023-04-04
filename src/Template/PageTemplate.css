@@ -1,0 +1,8 @@
+.PageTemplate_Container{
+    display : 'flex';
+    flex-direction : 'column'
+}
+.PageTemplate_Container > h3 {
+    font-weight: bold;
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

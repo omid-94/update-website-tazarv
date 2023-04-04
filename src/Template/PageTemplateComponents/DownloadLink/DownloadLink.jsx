@@ -14,7 +14,7 @@ const DownloadLink = ({MainLink}) => {
         <span>{MainLink.date}</span>
       </div>
       <div>
-      <a className='btn btn-primary' 
+      <a className='btn btn-secondary' 
         target='_blank'
           href={MainLink.link} style={{width : '80%'}}>
             دانلود

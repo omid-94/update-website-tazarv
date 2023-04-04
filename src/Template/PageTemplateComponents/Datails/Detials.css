@@ -1,13 +1,16 @@
 .Detials_Container {
-    border: 1px solid red;
+    border: 1px solid black;
     border-radius: 10px;
-    background-color: lightgreen;
-    margin: 5px;
+    background-color: grey;
+    margin: 10px;
+    color: white;
+    box-shadow: 5px 5px 10px  black;
 }
 
 .Detials_Container > span {
     text-decoration: wavy;
     font-size: 15pt;
     margin: 15px;
-    color: red;
+    color: black;
+    font-weight: bold;
 }

@@ -3,7 +3,7 @@ import { DatabaseUpdate, Custom404 } from '../Pages'
 const Routing = () => {
   return (
     <Routes>
-      <Route path="/" element={<DatabaseUpdate/>}/>
+      <Route path="/Database" element={<DatabaseUpdate/>}/>
       <Route path="*" element={<Custom404/>}/>
     </Routes>
   //   <Routes>
