@@ -41,7 +41,7 @@
     "OtherLinks" : [
         {
             "Id" : 1,
-            "name" : "aaa",
+            "name" : "نسخه ستادی",
             "version" : "1.0.2",
             "date" : "1402/01/15",
             "link" : "aaaaaaaaaaaaaaaaaaa",
@@ -49,15 +49,23 @@
         },
         {
             "Id" : 2,
-            "name" : "bbbb",
+            "name" : "نسخه مرکز",
+            "version" : "1.0.2",
+            "date" : "1402/01/15",
+            "link" : "aaaaaaaaaaaaaaaaaaa",
+            "isActive" : false
+        },
+        {
+            "Id" : 3,
+            "name" : "نسخه متمرکز",
             "version" : "1.0.3",
             "date" : "1402/01/16",
             "link" : "bbbbbbbbbbbbbbbb",
             "isActive" : false
         },
         {
-            "Id" : 3,
-            "name" : "cccc",
+            "Id" : 4,
+            "name" : "نسخه ناحیه",
             "version" : "1.0.4",
             "date" : "1402/01/17",
             "link" : "cccccccccccccccc",

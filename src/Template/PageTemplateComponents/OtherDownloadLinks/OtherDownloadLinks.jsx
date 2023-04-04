@@ -1,23 +1,13 @@
 import React, { useState } from 'react'
-import { Details } from '..'
-/*
-"name" : "aaa",
-"version" : "1.0.2",
-"date" : "1402/01/15",
-"link" : "aaaaaaaaaaaaaaaaaaa",
-"isActive" : true
-*/
+import Details  from '../Datails/Detials'
+
 const OtherDownloadLinks = ({OtherLinks}) => {
   const [allLinks , setAllLinks] = useState([...OtherLinks])
   const tabItemClick = (e, Id) => {
-    // e.preventDefault();
-    
-    console.log("tabItemClick-Id" , Id)
     let temp = [...allLinks]
     temp.map((mItem) => 
         mItem.isActive = mItem.Id == Id
     )
-    console.log("tabItemClick-temp" , temp)
     setAllLinks([...temp]) 
 } 
   return (
@@ -27,13 +17,13 @@ const OtherDownloadLinks = ({OtherLinks}) => {
             return(
             <li key={index} className="nav-item" role="presentation">
               <a onClick={(e) => tabItemClick(e , item.Id)}
-                className="nav-link "
+                className={"nav-link " + (item.isActive ? "active" : "")}
                 id={"ex1-tab-" + index}
                 data-mdb-toggle="tab"
                 href={"#ex1-tabs-" + index}
                 role="tab"
                 aria-controls={"#ex1-tabs-" + index}
-                aria-selected="true"
+                aria-selected={item.isActive}
                 > {item.name}
                 </a>
             </li>
@@ -55,20 +45,6 @@ const OtherDownloadLinks = ({OtherLinks}) => {
           </div>
           )
       })}
-        {/* <div
-          className="tab-pane fade "
-          id="ex1-tabs-1"
-          role="tabpanel"
-          aria-labelledby="ex1-tab-1"
-        >
-          Tab 1 content
-        </div>
-        <div className="tab-pane fade " id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
-          Tab 2 content
-        </div>
-        <div className="tab-pane fade show active" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
-          Tab 3 content
-        </div> */}
     </div>
   )
 }
