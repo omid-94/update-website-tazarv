@@ -5,7 +5,7 @@ const PageTemplate = ({Title , NoteList , DetailList ,
                     PrevDetailList , MainLinkURL , OtherLinksURL }) => {
     console.log(Notes)
     return (
-    <div>
+    <div style={{display : 'flex', flexDirection : 'column'}}>
         <h3>{Title}</h3>
         {NoteList && <Notes Notes={NoteList}/>}
         {DetailList && <Details Details={DetailList}/>}

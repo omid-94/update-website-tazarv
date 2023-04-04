@@ -40,16 +40,28 @@
     },
     "OtherLinks" : [
         {
+            "Id" : 1,
             "name" : "aaa",
-            "link" : "aaaaaaaaaaaaaaaaaaa"
+            "version" : "1.0.2",
+            "date" : "1402/01/15",
+            "link" : "aaaaaaaaaaaaaaaaaaa",
+            "isActive" : true
         },
         {
+            "Id" : 2,
             "name" : "bbbb",
-            "link" : "bbbbbbbbbbbbbbbb"
+            "version" : "1.0.3",
+            "date" : "1402/01/16",
+            "link" : "bbbbbbbbbbbbbbbb",
+            "isActive" : false
         },
         {
+            "Id" : 3,
             "name" : "cccc",
-            "link" : "cccccccccccccccc"
+            "version" : "1.0.4",
+            "date" : "1402/01/17",
+            "link" : "cccccccccccccccc",
+            "isActive" : false
         }
     ]
 }

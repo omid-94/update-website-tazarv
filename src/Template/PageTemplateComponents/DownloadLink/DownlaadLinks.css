@@ -6,6 +6,7 @@
     background-color: lightblue;
     border-radius: 20px;
     padding: 10px;
+    margin: 10px;
 }
 .DownloadLink_Title {
     display: flex;

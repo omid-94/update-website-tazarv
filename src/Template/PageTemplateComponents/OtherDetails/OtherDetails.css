@@ -1,0 +1,8 @@
+.OtherDetails_Container {
+    display: flex;
+}
+.OtherDetails_Container > a {
+    width : 100%;
+    background-color: aqua;
+    margin-bottom: 5px;
+}
